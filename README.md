@@ -1,2 +1,2 @@
-# move
-move
+# Move Contract
+Game on Sui
