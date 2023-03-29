@@ -7,7 +7,7 @@ function install(){
 }
 
 function move(){
-  docker run --rm -it -v $PWD:/project move/cli $@
+  docker run -u `id -u`:`id -g` --rm -it -v $PWD:/project move/cli $@
 }
 
 $@
