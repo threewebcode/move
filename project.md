@@ -7,3 +7,4 @@
 - [red packet](https://github.com/coming-chat/sui-red-packet)
 - [kuna-amm](https://github.com/kunalabs-io/sui-smart-contracts)
 - [sunia-nft](https://github.com/Mynft/suia)
+- [air-drop](https://github.com/gamejamco/sc-sui-core)
