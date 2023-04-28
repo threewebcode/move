@@ -8,3 +8,5 @@
 - [kuna-amm](https://github.com/kunalabs-io/sui-smart-contracts)
 - [sunia-nft](https://github.com/Mynft/suia)
 - [air-drop](https://github.com/gamejamco/sc-sui-core)
+- [launchpad](https://github.com/shoshinsquare/contract]
+- [nft-protocol](https://github.com/Origin-Byte/nft-protocol)
