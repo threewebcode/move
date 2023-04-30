@@ -24,3 +24,8 @@
 - [reward pool](https://github.com/battlemon-project/sui-contracts)
 - [lend protocol](https://github.com/solendprotocol/suilend)
 - [loot box](https://github.com/LoyaltyGM/sui-lootbox)
+- [sui lottery](https://github.com/geomel/SuiLottery)
+- [messager](https://github.com/MystenLabs/sui-axelar)
+- [dante protocol](https://github.com/dantenetwork/protocol-sui)
+- [loyalty program](https://github.com/LoyaltyGM/sui_loyalty_gm)
+- [bucket protocol](https://github.com/Bucket-Protocol/oracle)
