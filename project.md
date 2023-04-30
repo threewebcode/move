@@ -23,3 +23,4 @@
 - [ylab contract](https://github.com/Ylabs-io/ylabs-contract)
 - [reward pool](https://github.com/battlemon-project/sui-contracts)
 - [lend protocol](https://github.com/solendprotocol/suilend)
+- [loot box](https://github.com/LoyaltyGM/sui-lootbox)
