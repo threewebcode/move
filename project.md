@@ -29,3 +29,4 @@
 - [dante protocol](https://github.com/dantenetwork/protocol-sui)
 - [loyalty program](https://github.com/LoyaltyGM/sui_loyalty_gm)
 - [bucket protocol](https://github.com/Bucket-Protocol/oracle)
+- [wormhole](https://github.com/wormhole-foundation/wormhole)
