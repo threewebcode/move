@@ -8,4 +8,8 @@ function build(){
   sui move build
 }
 
+function dev(){
+  docker run --rm -it -v "$PWD:/root" rust bash
+}
+
 $@
