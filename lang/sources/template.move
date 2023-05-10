@@ -11,8 +11,4 @@ module lang::module_name {
 
     // --- function elements ---
 
-    /**
-    * 
-    */
-
 }
