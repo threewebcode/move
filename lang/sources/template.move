@@ -1,5 +1,5 @@
 /// ===== xxx =====
-module package_name::module_name {
+module lang::module_name {
     
     // --- package dependencies ---
     
