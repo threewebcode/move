@@ -71,6 +71,4 @@ const keypair = deriveKeyPair(mnemonics);
 const address = getAddress(keypair);
 const provider = getProvider();
 faucet(address, provider);
-const objects = getGasObjectsOwnedByAddress(address, provider);
-console.log(objects);
 console.log("debug message", address);
