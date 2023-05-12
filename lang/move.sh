@@ -5,7 +5,7 @@ function test(){
 }
 
 function build(){
-  sui move build
+  sui move build --skip-fetch-latest-git-deps
 }
 
 function dev(){
