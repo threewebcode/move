@@ -13,3 +13,5 @@ Cargo.lock
 build
 .sui
 .bash_history
+
+node_modules
