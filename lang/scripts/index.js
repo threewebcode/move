@@ -48,8 +48,22 @@ async function faucet(address, provider) {
     console.log(resp);
 }
 
-async function call() {
-
+async function call(target) {
+    const tx = new TransactionBlock();
+    const signer = getSigner(keypair, provider);
+    tx.moveCall({
+        target: target,
+        typeArguments: [],
+        arguments: [],
+    });
+    const txn = await signer.signAndExecuteTransactionBlock({
+    transactionBlock: tx,
+    options: {
+      showEffects: true,
+      showObjectChanges: true,
+    },
+  });
+  return txn;
 }
 
 const mnemonics = "stereo cattle target shoulder orbit tiny clown twin input phone green lake";
@@ -57,4 +71,6 @@ const keypair = deriveKeyPair(mnemonics);
 const address = getAddress(keypair);
 const provider = getProvider();
 faucet(address, provider);
+const objects = getGasObjectsOwnedByAddress(address, provider);
+console.log(objects);
 console.log("debug message", address);
