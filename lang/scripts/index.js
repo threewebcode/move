@@ -66,7 +66,8 @@ async function call(target) {
   return txn;
 }
 
-const mnemonics = "stereo cattle target shoulder orbit tiny clown twin input phone green lake";
+//const mnemonics = "stereo cattle target shoulder orbit tiny clown twin input phone green lake";
+const mnemonics = "path dawn point mass hollow surge identify pet velvet hover bar soccer";
 const keypair = deriveKeyPair(mnemonics);
 const address = getAddress(keypair);
 const provider = getProvider();

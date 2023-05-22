@@ -5,7 +5,7 @@ const provider = new JsonRpcProvider();
 const main = async () => {
     const tb = new TransactionBlock();
     tb.moveCall({
-        target: "0x34b5876122d0bfbb92fab2da0570880f9bb04b117867ec58c12e59e738859a9e::devnet::get",
+        target: "0x985fbb999e12f1c6956d8dafa0baab720a444473cd4705a882f24ec0b48454dc::devnet::get",
         arguments: []
     })
     const result = await provider.devInspectTransactionBlock({
