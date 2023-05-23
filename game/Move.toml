@@ -1,18 +1,14 @@
 [package]
 name = "game"
-version = "0.0.1"
+version = "0.0.2"
+published-at = "0xbbfea7d0889c68407fe5cd52a218dba6ee87eb5126b66854d61d9d02714a8e97"
 
 [dependencies.Sui]
 git = "https://github.com/MystenLabs/sui.git"
 subdir = "crates/sui-framework/packages/sui-framework"
-rev = "ae1212baf8f0837e25926d941db3d26a61c1bea2"
-
-[dependencies.NftProtocol]
-git = "https://github.com/Origin-Byte/nft-protocol.git"
-subdir = "contracts/nft_protocol"
-rev = "a933149e07f1da95bc648ee4f95904d11e70bc8e"
+rev = "testnet"
 
 [addresses]
 game = "0x0"
-
 sui = "0000000000000000000000000000000000000000000000000000000000000002"
+
