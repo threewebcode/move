@@ -1,16 +1,9 @@
-const { JsonRpcProvider, Connection, devnetConnection,TransactionBlock, Ed25519Keypair, RawSigner } = require("@mysten/sui.js");
-
-const DEFAULT_FAUCET_URL = devnetConnection.faucet;
-const DEFAULT_FULLNODE_URL = devnetConnection.fullnode;
-const DEFAULT_GAS_BUDGET = 10000000;
+const { JsonRpcProvider, devnetConnection,TransactionBlock, Ed25519Keypair, RawSigner, testnetConnection } = require("@mysten/sui.js");
 
 function getProvider() {
     return new JsonRpcProvider(
-        new Connection({
-            fullnode: DEFAULT_FULLNODE_URL,
-            faucet: DEFAULT_FAUCET_URL,
-        }),
-        {},
+        // devnetConnection
+        testnetConnection
     );
 }
 
@@ -67,9 +60,12 @@ async function call(target) {
 }
 
 //const mnemonics = "stereo cattle target shoulder orbit tiny clown twin input phone green lake";
-const mnemonics = "path dawn point mass hollow surge identify pet velvet hover bar soccer";
-const keypair = deriveKeyPair(mnemonics);
-const address = getAddress(keypair);
+// const mnemonics = "path dawn point mass hollow surge identify pet velvet hover bar soccer";
+// const keypair = deriveKeyPair(mnemonics);
+// const address = getAddress(keypair);
 const provider = getProvider();
+// faucet(address, provider);
+// console.log("debug message", address);
+address = "0x84c123fcd0e19ddd994c22f21d3e2074fe2b6f5fe9fb9c8871ae6eaf8a8b7931";
+console.log("testnet message", address);
 faucet(address, provider);
-console.log("debug message", address);
