@@ -5,18 +5,18 @@ const DEFAULT_FULLNODE_URL = devnetConnection.fullnode;
 
 function getProvider() {
     return new JsonRpcProvider(
-        testnetConnection
+        devnetConnection
     );
 }
 
 async function main() {
     const provider = getProvider();
     let events = await provider.queryEvents({
-        query: {"Transaction":"FpccDSmL94NzgNCLpHTT7iSkMBPVB9XQBmgNPXscH7tA"}
+        query: {"Transaction":"4a7CzaLxYsTJDtS5EsKe4gVwJb2V5xzsaYU3HG6gqKTL"}
     });
-    // console.log(events);
+    console.log(events.data[0].parsedJson);
     // await provider.subscribeEvent({
-    //     // filter: { Sender:"0x84c123fcd0e19ddd994c22f21d3e2074fe2b6f5fe9fb9c8871ae6eaf8a8b7931"},
+    //     // filter: { Sender:"0xdcc2680302021a55088de7e310c045457ee08016d68557639c18a27dd766d8a1"},
     //     filter: {"All": []},
     //     onMessage: (event) => {
     //         console.log(event.transactionModule, event.type, event.packageId);

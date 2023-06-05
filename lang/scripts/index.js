@@ -2,8 +2,8 @@ const { JsonRpcProvider, devnetConnection,TransactionBlock, Ed25519Keypair, RawS
 
 function getProvider() {
     return new JsonRpcProvider(
-        // devnetConnection
-        testnetConnection
+        devnetConnection
+        // testnetConnection
     );
 }
 
@@ -59,13 +59,20 @@ async function call(target) {
   return txn;
 }
 
+async function info(provider) {
+    let info = await provider.getRpcApiVersion();
+    console.log("info", info);
+}
+
 //const mnemonics = "stereo cattle target shoulder orbit tiny clown twin input phone green lake";
-// const mnemonics = "path dawn point mass hollow surge identify pet velvet hover bar soccer";
-// const keypair = deriveKeyPair(mnemonics);
-// const address = getAddress(keypair);
+
+const mnemonics = "path dawn point mass hollow surge identify pet velvet hover bar soccer";
+const keypair = deriveKeyPair(mnemonics);
+const address = getAddress(keypair);
 const provider = getProvider();
+info(provider);
 // faucet(address, provider);
-// console.log("debug message", address);
-address = "0x84c123fcd0e19ddd994c22f21d3e2074fe2b6f5fe9fb9c8871ae6eaf8a8b7931";
-console.log("testnet message", address);
-faucet(address, provider);
+console.log("debug message", address);
+// address = "0x84c123fcd0e19ddd994c22f21d3e2074fe2b6f5fe9fb9c8871ae6eaf8a8b7931";
+// console.log("testnet message", address);
+// faucet(address, provider);
