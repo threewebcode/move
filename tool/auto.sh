@@ -8,8 +8,6 @@ while read line; do
   recipients+=("${fields[0]}")
   amounts+=(${fields[1]})
 done < "$csv_file"
-recipients_string=$(printf "\"%s\"", "${recipients[@]}")
-amounts_string=$(printf "%d", "${amounts[@]}")
-recipients_para="'["$recipients_string"]'"
-account_para="'["$amounts_string"]'"
-echo sui client pay_sui --input_coins '["coid_id"]' --recipients ${recipients_para} --amounts ${account_para} --gas-budget 1000000000
+recipients_para=$(printf "%s " "${recipients[@]}")
+account_para=$(printf "%d " "${amounts[@]}")
+sui client pay-sui --input-coins "0x1fd49faed488d030dcea1463aee14c819fd0bb5c5e44d563ea33c7405fae4e24" --recipients ${recipients_para} --amounts ${account_para} --gas-budget 1000000000
