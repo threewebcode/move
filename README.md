@@ -1,2 +1,2 @@
 # Move Contract
-Game on Sui
+Move language on Sui
